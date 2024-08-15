@@ -47,9 +47,7 @@ private:
                 // << "\nOpcao escolhida: "
             ;
 
-            // getUserInput<int>(op, "Opcao escolhida", "Apenas numeros sao aceitos!");
-            std::cout << "Opcao escolhida: ";
-            std::cin >> op;
+            getUserInput<int>(op, "Opcao escolhida", "Apenas numeros sao aceitos!");
             PRINT_SEP();
             
             std::string title;
@@ -59,6 +57,7 @@ private:
                 // newEvent();
                 std::cout << "Titulo do evento: ";
                 std::getline(std::cin, title);
+                std::cout << title << std::endl;
                 break;
             
             case 2:
@@ -121,7 +120,6 @@ int main()
     m.run();
 
     // std::string title;
-    // // Event evt;
 
     // std::cout << "Titulo: ";
     // std::getline(std::cin, title);
